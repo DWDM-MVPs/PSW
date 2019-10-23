@@ -1,0 +1,6 @@
+body{background-color: #E7EBF0;}
+h1{background-color: green; color:red}
+p{font-family:Verdana,Arial;font-size:16px;background-color:lightblue;}
+.destaque{background-color:yellow;font-weight:bold;}
+.p2{font-family:serif,Arial;font-size:12px;font-style:italic;text-decoration:underline;background-image:linear-gradient(white,grey);}
+ul{background-color:#333333; list-style-type:none;line-height:20px;border-style: groove;border-color:red;font-family:Arial;te}
