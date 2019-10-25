@@ -1,0 +1,71 @@
+﻿/* Tirar os espaços brancos entre o browser e a página */
+body {
+	margin: auto;
+}
+
+/* Bordas do título */
+.headerborder {
+	background-color: #50BBCF;
+}
+
+/* O título */
+.header {
+	margin-left: 20%;
+	margin-right: 20%;
+	background-color: #4FCCE3;
+	width: 50%;
+}
+
+/* Texto no título */
+.headertitle {
+	padding-top: 10px;
+	padding-left: 60px;
+}
+
+/* A caixinha onde o menu está metido para poder meter espaço entre a borda e  menu */
+.menubox {
+	padding-left: 20px;
+}
+
+/* O menu em si */
+.menu {
+	float: left;
+	background-color: #2D6975;
+	overflow: hidden;
+	border-radius: 25px;
+}
+
+	/* As ceninhas com a tag 'a' com a cor da letra e tal */
+	.menu a {
+		float: left;
+		color: #FFF;
+		text-align: center;
+		padding: 25px;
+	}
+
+		/* O SPECIAL EFFECT de quando se passa o rato por fica para aquilo ficar espetacular! Brilhante! Sparkle!!! */
+		.menu a:hover {
+			background-color: #BBB
+		}
+
+/* Serve para separar os items no menu */
+.separar {
+	border-right: 1px solid;
+}
+
+/* A borda da página principal */
+.mainborder {
+	background-color: #F5F5F5;
+}
+
+/* A página principal */
+.main {
+	margin-left: 20%;
+	margin-right: 20%;
+	background-color: #FFF;
+	width: 50%;
+}
+
+.linha {
+	border-bottom: 5px solid #2D6975;
+}
