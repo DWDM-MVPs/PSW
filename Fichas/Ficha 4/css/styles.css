@@ -1,5 +1,15 @@
 body{background-color: #50BBCF;font-family:Arial;}
-h1{	text-decoration-color: white;background-color: #4FCCE3;}
-p{font-style: Arial;font-size: 1.5em;}
+h1 {
+    text-decoration-color: white;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+}
+p {
+    font-style: Arial;
+    font-size: 1.5em;
+    background-color: #4FCCE3;
+}
 #img{margin-bottom: 1px;margin-left : 1px;width: 33%;height: 1px;background-color: red;color: green;position: fixed;bottom: 0;}
 footer{background-color: #4FCCE3;}
