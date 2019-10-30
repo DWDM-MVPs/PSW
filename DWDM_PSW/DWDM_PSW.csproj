@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0">
+  <PropertyGroup>
+    <RootNamespace>DWDM_PSW</RootNamespace>
+    <ProjectGuid>{E2E8DF2E-BE78-4EA0-865F-C505D9A8BD6A}</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Ficha 1\index.html" />
+    <Content Include="Ficha 2\Exercício 1\imagensclubes\benfica.png" />
+    <Content Include="Ficha 2\Exercício 1\imagensclubes\porto.png" />
+    <Content Include="Ficha 2\Exercício 1\imagensclubes\sporting.png" />
+    <Content Include="Ficha 2\Exercício 1\imagensjogadores\benfica\carlos_vinicius.png" />
+    <Content Include="Ficha 2\Exercício 1\imagensjogadores\benfica\joao_filipe.png" />
+    <Content Include="Ficha 2\Exercício 1\imagensjogadores\benfica\pizzi.png" />
+    <Content Include="Ficha 2\Exercício 1\imagensjogadores\benfica\raul_de_tomas.png" />
+    <Content Include="Ficha 2\Exercício 1\imagensjogadores\benfica\ruben_dias.png" />
+    <Content Include="Ficha 2\Exercício 1\imagensjogadores\porto\agustin_marchesin.png" />
+    <Content Include="Ficha 2\Exercício 1\imagensjogadores\porto\luis_diaz.png" />
+    <Content Include="Ficha 2\Exercício 1\imagensjogadores\porto\moussa_marega.png" />
+    <Content Include="Ficha 2\Exercício 1\imagensjogadores\porto\pepe.png" />
+    <Content Include="Ficha 2\Exercício 1\imagensjogadores\porto\shoya_nakajima.png" />
+    <Content Include="Ficha 2\Exercício 1\imagensjogadores\sporting\bruno_fernandes.png" />
+    <Content Include="Ficha 2\Exercício 1\imagensjogadores\sporting\jese.png" />
+    <Content Include="Ficha 2\Exercício 1\imagensjogadores\sporting\luciano_vietto.png" />
+    <Content Include="Ficha 2\Exercício 1\imagensjogadores\sporting\sebastian_coates.png" />
+    <Content Include="Ficha 2\Exercício 1\imagensjogadores\sporting\yannick_bolasie.png" />
+    <Content Include="Ficha 2\Exercício 1\index.html" />
+    <Content Include="Ficha 2\Exercício 2\index.html" />
+    <Content Include="Ficha 3\Exercício 1\index.html" />
+    <Content Include="Ficha 3\Exercício 2\estilos.css" />
+    <Content Include="Ficha 3\Exercício 2\index.html" />
+    <Content Include="Ficha 3\Exercício 3\css\styles.css" />
+    <Content Include="Ficha 3\Exercício 3\img\sarah_parmenter.png" />
+    <Content Include="Ficha 3\Exercício 3\index.html" />
+    <Content Include="Ficha 4\css.css" />
+    <Content Include="Ficha 4\index.html" />
+  </ItemGroup>
+</Project>
