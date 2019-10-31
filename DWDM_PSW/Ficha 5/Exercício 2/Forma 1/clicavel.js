@@ -1,6 +1,6 @@
 ﻿var dia = 0;
 
-function trueFalse() {
+function funcao() {
 	if (dia > 6) dia = 0;
 
 	if (dia == 0) alert("Domingo");

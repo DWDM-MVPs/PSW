@@ -1,5 +1,5 @@
 ﻿var x = false;
 
-function trueFalse() {
+function funcao() {
 	alert((x = !x) == true ? "Verdadeiro" : "Falso");
 }
