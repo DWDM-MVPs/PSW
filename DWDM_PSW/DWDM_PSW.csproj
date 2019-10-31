@@ -40,6 +40,8 @@
     <Content Include="Ficha 5\Exercício 2\Forma 1\index.html" />
     <Content Include="Ficha 5\Exercício 2\Forma 2\clicavel.js" />
     <Content Include="Ficha 5\Exercício 2\Forma 2\index.html" />
+    <Content Include="Ficha 5\Exercício 3\index.html" />
+    <Content Include="Ficha 5\Exercício 3\pintacores.js" />
   </ItemGroup>
   <ItemGroup />
 </Project>
