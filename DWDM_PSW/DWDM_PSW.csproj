@@ -34,5 +34,7 @@
     <Content Include="Ficha 3\Exercício 3\index.html" />
     <Content Include="Ficha 4\css.css" />
     <Content Include="Ficha 4\index.html" />
+    <Content Include="Ficha 5\clicavel.js" />
+    <Content Include="Ficha 5\index.html" />
   </ItemGroup>
 </Project>
