@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="estilos.css" />
+	<title></title>
+</head>
+<body id="body">
+	<p id="pontuacao">Pontuação: 0</p>
+	<p id="resultado">Resposta correta!</p>
+	<div>
+		<table id="tabela">
+			<tr>
+				<td id="pergunta" colspan="2" style="text-align: center;">penguntA</td>
+			</tr>
+			<tr>
+				<td id="resposta1" class="respostas" onclick="f_click(1)">r1</td>
+				<td id="resposta2" class="respostas" onclick="f_click(2)">r2</td>
+			</tr>
+			<tr>
+				<td id="resposta3" class="respostas" onclick="f_click(3)">r3</td>
+				<td id="resposta4" class="respostas" onclick="f_click(4)">r4</td>
+			</tr>
+		</table>
+		<input id="proximo" type="button" value="Próxima pergunta »"/>
+	</div>
+</body>
+<script src="jogo.js"></script>
+</html>

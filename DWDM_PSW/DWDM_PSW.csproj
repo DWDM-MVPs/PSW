@@ -44,6 +44,9 @@
     <Content Include="Ficha 5\Exercício 3\pintacores.js" />
     <Content Include="Ficha 5\Exercício 4\java.js" />
     <Content Include="Ficha 5\Exercício 4\index.html" />
+    <Content Include="Ficha 6\Exercício 1\ficha6_ex1.html" />
+    <Content Include="Ficha 6\Exercício 1\jogo.js" />
+    <Content Include="Ficha 6\Exercício 1\estilos.css" />
   </ItemGroup>
   <ItemGroup />
 </Project>
