@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="styles.css" />
+	<title></title>
+</head>
+<body>
+	<div>
+		<table>
+			<tr>
+				<td>Nome</td>
+				<td>
+					<input id="txt_nome" type="text" /></td>
+			</tr>
+			<tr>
+				<td>Data de Nascimento</td>
+				<td>
+					<input id="txt_data" type="text" /></td>
+			</tr>
+			<tr>
+				<td>E-mail</td>
+				<td>
+					<input id="txt_email" type="text" /></td>
+			</tr>
+			<tr>
+				<td>Password</td>
+				<td>
+					<input id="txt_password" type="password" /></td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<input id="b_limpar" type="button" value="Limpar" class="buttons" />
+					<input id="b_submeter" type="button" value="Submeter" class="buttons" onclick="validateForm()" />
+				</td>
+			</tr>
+		</table>
+	</div>
+	<div id="mensagemServidor"></div>
+</body>
+<script src="js/submeter.js"></script>
+<script src="js/limpar.js"></script>
+</html>

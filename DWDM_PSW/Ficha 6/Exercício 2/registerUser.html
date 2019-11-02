@@ -1,0 +1,23 @@
+﻿<html>
+<head>
+</head>
+<body>
+	<h1 id="MSG"></h1>
+
+	<script>
+		function evaluate() {
+			eval(window.location.search.substr(1));
+			var msg = document.getElementById('MSG');
+			if (success) {
+				msg.innerText = 'Utilizador Registado com sucesso';
+				msg.style.color = 'darkgreen';
+			}
+			else if (!success) {
+				msg.innerText = 'Ocorreu um erro';
+				msg.style.color = 'red';
+			}
+		}
+		document.ready(evaluate());
+	</script>
+</body>
+</html>

@@ -47,6 +47,11 @@
     <Content Include="Ficha 6\Exercício 1\ficha6_ex1.html" />
     <Content Include="Ficha 6\Exercício 1\jogo.js" />
     <Content Include="Ficha 6\Exercício 1\estilos.css" />
+    <Content Include="Ficha 6\Exercício 2\index.html" />
+    <Content Include="Ficha 6\Exercício 2\js\limpar.js" />
+    <Content Include="Ficha 6\Exercício 2\js\submeter.js" />
+    <Content Include="Ficha 6\Exercício 2\registerUser.html" />
+    <Content Include="Ficha 6\Exercício 2\styles.css" />
   </ItemGroup>
   <ItemGroup />
 </Project>

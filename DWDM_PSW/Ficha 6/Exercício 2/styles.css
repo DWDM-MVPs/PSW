@@ -1,0 +1,19 @@
+﻿div {
+	margin-left: 40%;
+	margin-right: 40%;
+}
+
+table {
+	width: 100%;
+	text-align: center;
+	background-color: lightgray;
+}
+
+.buttons {
+	float: right;
+	width: 90px;
+}
+
+#mensagemServidor {
+	visibility: hidden;
+}
