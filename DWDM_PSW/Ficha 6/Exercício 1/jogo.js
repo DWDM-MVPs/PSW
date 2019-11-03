@@ -24,11 +24,11 @@ function f_loadPergunta() {
 
 
 window.onload = function () {
-	var p1 = ["P1", "R1", "R2", "R3", "R4", "1"];
-	var p2 = ["P2", "R1", "R2", "R3", "R4", "2"];
-	var p3 = ["P3", "R1", "R2", "R3", "R4", "3"];
-	var p4 = ["P4", "R1", "R2", "R3", "R4", "4"];
-	var p5 = ["P5", "R1", "R2", "R3", "R4", "1"];
+	var p1 = ["Que nome se dá aos dados armazenados no cliente pelas páginas WEB?", "Requests", "Cookies", "Dados", "Vírus", "2"];
+	var p2 = ["Para selecionar um ID no CSS usa-se?", "#id", ".id", "id", "$id", "1"];
+	var p3 = ["Que tag é usada para declarar código JS?", "<js>", "<java>", "<javascript>", "<script>", "4"];
+	var p4 = ["Qual é a tag usada para mudar o título da página?", "<title>", "<t>", "<pagetitle>", "<header>", "1"];
+	var p5 = ["Como se definem comentários em JS?", "$", "#", "\/\/", "--", "3"];
 
 	ps = [p1, p2, p3, p4, p5];
 
