@@ -19,7 +19,6 @@
   <ItemGroup>
     <Content Include="package-lock.json" />
     <Content Include="package.json" />
-    <Content Include="README.md" />
     <Content Include="public\robots.txt" />
     <Content Include="public\index.html" />
     <Content Include="public\logo192.png" />
