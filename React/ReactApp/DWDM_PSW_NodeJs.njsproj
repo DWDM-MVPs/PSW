@@ -35,6 +35,7 @@
     <Content Include="src\serviceWorker.js" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="asdasdas\" />
     <Folder Include="public" />
     <Folder Include="src" />
   </ItemGroup>
