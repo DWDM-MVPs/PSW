@@ -18,6 +18,15 @@
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
   <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
   <ItemGroup>
+    <Content Include="Base\public\favicon.ico" />
+    <Content Include="Base\public\index.html" />
+    <Content Include="Base\public\logo192.png" />
+    <Content Include="Base\public\logo512.png" />
+    <Content Include="Base\public\manifest.json" />
+    <Content Include="Base\public\robots.txt" />
+    <Content Include="Base\src\App.css" />
+    <Content Include="Base\src\index.css" />
+    <Content Include="Base\src\logo.svg" />
     <Content Include="package-lock.json" />
     <Content Include="package.json" />
     <Content Include="public\robots.txt" />
@@ -36,10 +45,22 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Fichas\" />
-    <Folder Include="Fichas\Default\" />
+    <Folder Include="Base\" />
+    <Folder Include="Base\public\" />
+    <Folder Include="Base\src\" />
     <Folder Include="Fichas\Ficha 1\" />
     <Folder Include="public" />
     <Folder Include="src" />
+    <Folder Include="src\components\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Base\src\App.js" />
+    <Compile Include="Base\src\App.test.js" />
+    <Compile Include="Base\src\index.js" />
+    <Compile Include="Base\src\serviceWorker.js" />
+    <Compile Include="src\components\header.js">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <!--Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them.-->
