@@ -18,11 +18,11 @@
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
   <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
   <ItemGroup>
-    <Content Include="public\img\diagrama.png" />
-    <Content Include="public\img\favicon.png" />
-    <Content Include="public\img\batman.jpg" />
-    <Content Include="public\img\superman.jpg" />
-    <Content Include="public\img\wonderwoman.jpg" />
+    <Content Include="_RANDOM\Fichas\Ficha 1\public\img\diagrama.png" />
+    <Content Include="_RANDOM\Fichas\Ficha 1\public\img\favicon.png" />
+    <Content Include="_RANDOM\Fichas\Ficha 1\public\img\batman.jpg" />
+    <Content Include="_RANDOM\Fichas\Ficha 1\public\img\superman.jpg" />
+    <Content Include="_RANDOM\Fichas\Ficha 1\public\img\wonderwoman.jpg" />
     <Content Include="_RANDOM\Base\public\favicon.ico" />
     <Content Include="_RANDOM\Base\public\index.html" />
     <Content Include="_RANDOM\Base\public\logo192.png" />
@@ -34,39 +34,39 @@
     <Content Include="_RANDOM\Base\src\logo.svg" />
     <Content Include="package-lock.json" />
     <Content Include="package.json" />
-    <Content Include="public\robots.txt" />
-    <Content Include="public\index.html" />
-    <Content Include="public\logo192.png" />
-    <Content Include="public\logo512.png" />
-    <Content Include="public\manifest.json" />
-    <Content Include="src\App.css" />
-    <Content Include="src\index.css" />
-    <Content Include="src\logo.svg" />
-    <Content Include="src\App.js" />
-    <Content Include="src\App.test.js" />
-    <Content Include="src\index.js" />
-    <Content Include="src\serviceWorker.js" />
+    <Content Include="_RANDOM\Fichas\Ficha 1\public\robots.txt" />
+    <Content Include="_RANDOM\Fichas\Ficha 1\public\index.html" />
+    <Content Include="_RANDOM\Fichas\Ficha 1\public\logo192.png" />
+    <Content Include="_RANDOM\Fichas\Ficha 1\public\logo512.png" />
+    <Content Include="_RANDOM\Fichas\Ficha 1\public\manifest.json" />
+    <Content Include="_RANDOM\Fichas\Ficha 1\src\App.css" />
+    <Content Include="_RANDOM\Fichas\Ficha 1\src\index.css" />
+    <Content Include="_RANDOM\Fichas\Ficha 1\src\logo.svg" />
+    <Content Include="_RANDOM\Fichas\Ficha 1\src\App.js" />
+    <Content Include="_RANDOM\Fichas\Ficha 1\src\App.test.js" />
+    <Content Include="_RANDOM\Fichas\Ficha 1\src\index.js" />
+    <Content Include="_RANDOM\Fichas\Ficha 1\src\serviceWorker.js" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="public\img\" />
-    <Folder Include="src\components\" />
+    <Folder Include="_RANDOM\Fichas\Ficha 1\public\img\" />
+    <Folder Include="_RANDOM\Fichas\Ficha 1\src\components\" />
     <Folder Include="_RANDOM\" />
     <Folder Include="_RANDOM\Fichas\" />
     <Folder Include="_RANDOM\Base\" />
     <Folder Include="_RANDOM\Base\public\" />
     <Folder Include="_RANDOM\Base\src\" />
     <Folder Include="_RANDOM\Fichas\Ficha 1\" />
-    <Folder Include="public" />
-    <Folder Include="src" />
+    <Folder Include="_RANDOM\Fichas\Ficha 1\public\" />
+    <Folder Include="_RANDOM\Fichas\Ficha 1\src\" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="src\components\Content.js">
+    <Compile Include="_RANDOM\Fichas\Ficha 1\src\components\Content.js">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="src\components\Footer.js">
+    <Compile Include="_RANDOM\Fichas\Ficha 1\src\components\Footer.js">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="src\components\Header.js">
+    <Compile Include="_RANDOM\Fichas\Ficha 1\src\components\Header.js">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="_RANDOM\Base\src\App.js" />
