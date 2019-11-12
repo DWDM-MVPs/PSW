@@ -27,7 +27,7 @@
 
 .header ul {
 	list-style-type: none;
-	margin-top: 5.45%;
+	margin-top: 3.8%;
 	padding: 0;
 	overflow: hidden;
 	background-color: #333;
@@ -67,12 +67,6 @@
 	width: 100%;
 }
 
-button {
-	display: block;
-	width: 10%;
-	height: 100px;
-}
-
 .galeria1 {
 	display: inline-block;
 }
@@ -83,7 +77,7 @@ button {
 }
 
 .titulo {
-	margin-top: 6.8%;
+	margin-top: 5%;
 }
 
 .loading {
@@ -95,4 +89,19 @@ button {
 }
 .construcao{
 	margin-top: 25%;
+}
+.dashboard{
+	margin-right: 20%;
+	margin-left: 20%;
+	margin-top: 5%;
+}
+
+.tableimg{
+	width:200px;
+	height:200px;
+}
+
+.acao{
+	width:150px;
+	height:50px;
 }
