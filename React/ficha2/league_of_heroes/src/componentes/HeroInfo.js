@@ -1,10 +1,10 @@
 import React from 'react';
 function HeroInfo(props) {
 	return (
-		<div cassName="galeria1">
-			<img className="imagem" src={props.url} alt="Flash"></img>
-			<h3 className="nome">{props.name}</h3>
-			<h5 className="poder">{props.super}</h5>
+		<div className="galeria1">
+			<img className="imagem" src={props.url} alt={props.name}></img>
+			<h3>{props.name}</h3>
+			<h5>{props.super}</h5>
 		</div>
 	);
 }
