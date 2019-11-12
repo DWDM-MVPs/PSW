@@ -21,7 +21,7 @@ const HerosList = [
 		id: 4,
 		image: 'images/superman.gif',
 		name: 'Super-Man',
-		super_power: '',
+		super_power: 'Super Strength',
 	},
 	{
 		id: 5,

@@ -1,9 +1,9 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Header from './componentes/Header';
 import Content from './componentes/Content';
 import Footer from './componentes/Footer';
+import { BrowserRouter as Router } from 'react-router-dom'
 
 class App extends React.Component{
     constructor(props) {
@@ -14,12 +14,14 @@ class App extends React.Component{
         }
     }
     render(){
-        return (
-            <div className="App">
-                <Header my_name={this.state.my_name} project_name={this.state.project_name}></Header>
-                <Content></Content>
-                <Footer my_name={this.state.my_name} project_name={this.state.project_name}></Footer>
-            </div>
+		return (
+			<Router>
+				<div className="App">
+					<Header my_name={this.state.my_name} project_name={this.state.project_name}/>
+					<Content/>
+					<Footer my_name={this.state.my_name} project_name={this.state.project_name}/>
+				</div>
+			</Router>
         );
     }
 }
