@@ -23,6 +23,7 @@
     <Content Include="public\img\batman.jpg" />
     <Content Include="public\img\diagrama.png" />
     <Content Include="public\img\favicon.png" />
+    <Content Include="public\img\loading.gif" />
     <Content Include="public\img\superman.jpg" />
     <Content Include="public\img\wonderwoman.jpg" />
     <Content Include="public\index.html" />
@@ -42,7 +43,13 @@
     <Folder Include="src\components\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="src\components\Dashboard.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="src\components\HeroInfo.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\components\Loader.js">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="src\shared\Heroes.js">
