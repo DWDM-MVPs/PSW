@@ -20,7 +20,7 @@ class Dashboard extends React.Component {
 								<td>{hero.name}</td>
 								<td>{(hero.super_power === '') ? "N/D" : hero.super_power}</td>
 								<td>
-									<button onClick={() => this.verliherois(hero.id)}>Eliminar</button>
+									<button onClick={() => this.eliminarHeroi(hero.id)}>Eliminar</button>
 									{this.isFavorito(hero.id)}
 									<button>Editar</button>
 								</td>
@@ -32,7 +32,7 @@ class Dashboard extends React.Component {
 		);
 	}
 
-	verliherois = (id) => {
+	eliminarHeroi = (id) => {
 		var list_of_heroes = this.props.list_of_heroes;
 		var favorite_heroes = this.props.favorite_heroes;
 
@@ -40,9 +40,7 @@ class Dashboard extends React.Component {
 			if (id === this.props.list_of_heroes[i].id) {
 				list_of_heroes.splice(i, 1);
 			}
-		}
 
-		for (var i = 0; i < this.props.favorite_heroes.length; i++) {
 			if (id === this.props.favorite_heroes[i]) {
 				favorite_heroes.splice(i, 1);
 			}
@@ -50,7 +48,7 @@ class Dashboard extends React.Component {
 
 		this.setState({
 			list_of_heroes: list_of_heroes,
-			favorite_heroes: favorite_heroes
+			favorite_heroes: favorite_heroes,
 		});
 	}
 
