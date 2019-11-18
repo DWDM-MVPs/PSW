@@ -7,32 +7,36 @@ import Dashboard from "./Dashboard";
 import HeroInfo from "./HeroInfo";
 
 class Content extends React.Component {
-	constructor(props) {
+	constructor(props) 
+	{
 		super(props)
-		this.state = {
+		this.state = 
+		{
 			list_of_heroes: heroesList,
 			favorite_heroes: [1, 5, 6],
 			loading: true,
 		}
 	}
 
-	componentDidMount = () => {
-		setInterval(() => {
-			this.setState({
+	componentDidMount = () => 
+	{
+		setInterval(() => 
+		{
+			this.setState(
+			{
 				loading: false,
 			});
 		}, 3000)
 	}
 
-	render() {
-		if (this.state.loading == true) {
-			return (
-				<div>
-					<Loader loading={this.state.loading} />
-				</div>
-			)
+	render() 
+	{
+		if (this.state.loading == true) 
+		{
+			return (<div><Loader loading={this.state.loading} /></div>)
 		}
-		else {
+		else 
+		{
 			return (
 				<Switch>
 					<Route exact path="/" render={() =>
@@ -42,10 +46,11 @@ class Content extends React.Component {
 							<HeroInfo hero="Superman" img="img/superman.jpg" />
 							<HeroInfo hero="Batman" img="img/batman.jpg" />
 							<HeroInfo hero="Wonder Woman" img="img/wonderwoman.jpg" />
-
 							{
-								this.state.list_of_heroes.map((heroi, pos) => {
-									if (this.state.favorite_heroes.includes(pos)) {
+								this.state.list_of_heroes.map((heroi, pos) => 
+								{
+									if (this.state.favorite_heroes.includes(pos)) 
+									{
 										return (<HeroInfo hero={heroi.name} img={heroi.image} />)
 									}
 								}
