@@ -17,12 +17,12 @@ class App extends React.Component{
 		return (
 			<Router>
 				<div className="App">
-					<Header my_name={this.state.my_name} project_name={this.state.project_name} />
-					<Content />
-					<Footer my_name={this.state.my_name} project_name={this.state.project_name} />
+					<Header my_name={this.state.my_name} project_name={this.state.project_name}/>
+					<Content/>
+					<Footer my_name={this.state.my_name} project_name={this.state.project_name}/>
 				</div>
 			</Router>
-		);
+        );
     }
 }
 export default App;
