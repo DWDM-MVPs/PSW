@@ -1,13 +1,13 @@
 ﻿import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { popular, setHeroesByUserId, setTopHeroesByUserId } from '../shared/API';
 import Formulario from './Formulario';
-import { setHeroesByUserId } from '../shared/API';
-import { setTopHeroesByUserId } from '../shared/API';
 
 class Dashboard extends React.Component {
 	render() {
 		return (
 			<div className="Dashboard">
+				<button onClick={popular}>Popular</button>
 				<NavLink exact to="/dashboard/add">Adicionar</NavLink>
 				<table className="Tabela">
 					<tr>

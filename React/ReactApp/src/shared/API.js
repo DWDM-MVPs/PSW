@@ -48,3 +48,16 @@ export function setTopHeroesByUserId(favoritos) {
 		}),
 	});
 }
+
+
+
+// Popular
+export function popular() {
+	popularTop3();
+}
+
+// F5 A10
+export function popularTop3() {
+	setTopHeroesByUserId(getTopHeroesByUserId());
+}
+}
