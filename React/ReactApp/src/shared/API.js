@@ -22,15 +22,29 @@ export function getTopHeroesByUserId() {
 }
 
 // [POST] Grava a lista de super-heróis de um determinado utilizador.
-export function setHeroesByUserId() {
+export function setHeroesByUserId(listaHerois) {
 	fetch(BASE_URL + "/users/" + PRIVATE_ID, {
 		method: 'POST',
+		headers: {
+			Accept: 'application/json',
+			'Content-Type': 'application/json',
+		},
+		body: JSON.stringify({
+			list_of_heroes: listaHerois,
+		}),
 	});
 }
 
 // [POST] Grava o top da lista de super-heróis de um determinado utilizador.
-export function setTopHeroesByUserId() {
+export function setTopHeroesByUserId(favoritos) {
 	fetch(BASE_URL + "/users/" + PRIVATE_ID + "/top", {
 		method: 'POST',
+		headers: {
+			Accept: 'application/json',
+			'Content-Type': 'application/json',
+		},
+		body: JSON.stringify({
+			favorite_heroes: favoritos,
+		}),
 	});
 }

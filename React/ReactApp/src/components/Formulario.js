@@ -1,5 +1,5 @@
 ﻿import React from 'react';
-import { Route } from 'react-router-dom';
+import { setHeroesByUserId } from '../shared/API';
 
 class Formulario extends React.Component {
 	constructor(props) {
@@ -60,6 +60,8 @@ class Formulario extends React.Component {
 					list_of_heroes: herois,
 				})
 		}
+
+		setHeroesByUserId(herois);
 	}
 
 	updateEvent = (e, campo) => {

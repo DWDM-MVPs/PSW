@@ -1,6 +1,7 @@
 ﻿import React from 'react';
 import { NavLink } from 'react-router-dom';
 import Formulario from './Formulario';
+import { setHeroesByUserId } from '../shared/API';
 
 class Dashboard extends React.Component {
 	render() {
@@ -53,6 +54,8 @@ class Dashboard extends React.Component {
 			list_of_heroes: list_of_heroes,
 			favorite_heroes: favorite_heroes,
 		});
+
+		setHeroesByUserId(this.state.list_of_heroes);
 	}
 
 	isFavorito = (id) => {
