@@ -5,15 +5,15 @@ import Loader from "../components/Loader";
 import Dashboard from "./Dashboard";
 import Formulario from './Formulario';
 import HeroInfo from "./HeroInfo";
-import { getTopHeroesByUserId } from "../shared/API";
+import { getTopHeroesByUserId, getHeroesByUserId } from "../shared/API";
 
 class Content extends React.Component {
 	constructor(props) {
 		super(props)
 		this.state =
 			{
-				list_of_heroes: getTopHeroesByUserId,
-				favorite_heroes: [1, 5, 6],
+				list_of_heroes: getHeroesByUserId,
+				favorite_heroes: getTopHeroesByUserId,
 				loading: true,
 			}
 	}
