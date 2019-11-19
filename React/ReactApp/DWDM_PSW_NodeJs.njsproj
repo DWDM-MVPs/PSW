@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{53612b4b-f6b8-4f88-a92e-1cad58c4eed2}</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <ProjectView>ProjectFiles</ProjectView>
+    <ProjectView>ShowAllFiles</ProjectView>
     <StartupFile>
     </StartupFile>
     <WorkingDirectory>.</WorkingDirectory>
@@ -44,6 +44,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="src\components\Dashboard.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\components\Formulario.js">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="src\components\HeroInfo.js">

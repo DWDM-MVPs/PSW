@@ -1,10 +1,10 @@
 ﻿import React from 'react';
 
 function Loader(props) {
-	if (props.loading == true) {
+	if (props.loading === true) {
 		return (
 			<div className="Loading">
-				<img className="loading" src="img/loading.gif" />
+				<img className="loading" alt="Imagem não encontrada." src="img/loading.gif" />
 			</div>
 		);
 	}

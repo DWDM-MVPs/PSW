@@ -5,6 +5,7 @@ import Loader from "../components/Loader";
 import heroesList from "../shared/Heroes";
 import Dashboard from "./Dashboard";
 import HeroInfo from "./HeroInfo";
+import Formulario from './Formulario';
 
 class Content extends React.Component {
 	constructor(props) {
@@ -25,7 +26,7 @@ class Content extends React.Component {
 	}
 
 	render() {
-		if (this.state.loading == true) {
+		if (this.state.loading === true) {
 			return (
 				<div>
 					<Loader loading={this.state.loading} />
@@ -48,18 +49,18 @@ class Content extends React.Component {
 									if (this.state.favorite_heroes.includes(pos)) {
 										return (<HeroInfo hero={heroi.name} img={heroi.image} />)
 									}
+									else return null;
 								}
 								)
 							}
 							<br />
-							<img src="img/diagrama.png" className="Diagrama" />
+							<img src="img/diagrama.png" alt="Imagem não encontrada" className="Diagrama" />
 						</div>
 					}
 					/>
-					<Route exact path="/dashboard" render={() =>
-						<Dashboard list_of_heroes={this.state.list_of_heroes} favorite_heroes={this.state.favorite_heroes} verliherois={this.verliherois} removefav={this.removefav} addfav={this.addfav} />
-					}
-					/>
+					<Route exact path="/dashboard" render={() => <Dashboard list_of_heroes={this.state.list_of_heroes} favorite_heroes={this.state.favorite_heroes} verliherois={this.verliherois} removefav={this.removefav} addfav={this.addfav} />} />
+					<Route exact path="/dashboard/add" render={() => (<Formulario list_of_heroes={this.state.list_of_heroes} />)} />
+					<Route exact path="/dashboard/edit/:id" render={() => (<Formulario list_of_heroes={this.state.list_of_heroes} />)} />
 				</Switch>
 			)
 		}

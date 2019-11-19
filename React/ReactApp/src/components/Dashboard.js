@@ -1,9 +1,11 @@
 ﻿import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 class Dashboard extends React.Component {
 	render() {
 		return (
 			<div className="Dashboard">
+				<NavLink exact to="/Dashboard/add">Adicionar</NavLink>
 				<table className="Tabela">
 					<tr>
 						<th>ID</th>
