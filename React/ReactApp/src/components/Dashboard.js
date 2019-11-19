@@ -2,6 +2,7 @@
 import { NavLink } from 'react-router-dom';
 import Formulario from './Formulario';
 import { setHeroesByUserId } from '../shared/API';
+import { setTopHeroesByUserId } from '../shared/API';
 
 class Dashboard extends React.Component {
 	render() {
@@ -78,6 +79,8 @@ class Dashboard extends React.Component {
 		this.setState({
 			favorite_heroes: favorite_heroes,
 		});
+
+		setTopHeroesByUserId(this.state.favorite_heroes);
 	}
 
 	removerFavorito = (id) => {
@@ -92,6 +95,8 @@ class Dashboard extends React.Component {
 		this.setState({
 			favorite_heroes: favorite_heroes,
 		});
+
+		setTopHeroesByUserId(this.state.favorite_heroes);
 	}
 }
 
