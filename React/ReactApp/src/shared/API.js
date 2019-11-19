@@ -9,16 +9,17 @@ var PRIVATE_ID = ""; // Código privado.
 // [GET] Devolve a lista de utilizadores.
 export function getUsers() {
 	fetch(BASE_URL + "/users/");
+	return fetch(BASE_URL + "/users/");
 }
 
 // [GET] Devolve a lista de super-heróis de um utilizador em especifico.
 export function getHeroesByUserId() {
-	fetch(BASE_URL + "/users/" + PUBLIC_ID);
+	return fetch(BASE_URL + "/users/" + PUBLIC_ID);
 }
 
 // [GET] Devolve o top-3 da lista de super-heróis de um utilizador.
 export function getTopHeroesByUserId() {
-	fetch(BASE_URL + "/users/" + PUBLIC_ID + "/top");
+	return fetch(BASE_URL + "/users/" + PUBLIC_ID + "/top");
 }
 
 // [POST] Grava a lista de super-heróis de um determinado utilizador.
