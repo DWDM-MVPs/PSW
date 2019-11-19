@@ -58,9 +58,6 @@
     <Compile Include="src\shared\API.js">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="src\shared\Heroes.js">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="src\App.js" />
     <Compile Include="src\App.test.js" />
     <Compile Include="src\components\Content.js" />
