@@ -54,10 +54,15 @@ export function setTopHeroesByUserId(favoritos) {
 // Popular
 export function popular() {
 	popularTop3();
+	popularSuperHerois();
 }
 
 // F5 A10
 export function popularTop3() {
 	setTopHeroesByUserId(getTopHeroesByUserId());
 }
+
+// F5 A11
+export function popularSuperHerois() {
+	setHeroesByUserId(getHeroesByUserId());
 }
