@@ -1,4 +1,5 @@
 ﻿import React from 'react';
+import { Route } from 'react-router-dom';
 
 class Formulario extends React.Component {
 	constructor(props) {
@@ -10,7 +11,6 @@ class Formulario extends React.Component {
 				imagem: "",
 				superPoder: "",
 			},
-			list_of_heroes: null,
 		}
 	}
 
@@ -22,19 +22,20 @@ class Formulario extends React.Component {
 				<form onSubmit={(e) => this.submitEvent(e, this.state.Super_heroi)}>
 					<p>
 						<label>Nome: </label>
-						<input type="text" id="name" name="name" placeholder="Nome" onChange={(e) => this.updateEvent(e, "name")} />
+						<input type="text" id="name" name="name" placeholder="Nome" onChange={(e) => this.updateEvent(e, "name")} value={this.props.list_of_heroes.name} />
 					</p>
 					<p>
 						<label>Imagem: </label>
-						<input type="text" id="imagem" name="imagem" placeholder="Imagem" onChange={(e) => this.updateEvent(e, "imagem")} />
+						<input type="text" id="imagem" name="imagem" placeholder="Imagem" onChange={(e) => this.updateEvent(e, "imagem")} value={this.props.list_of_heroes.imagem} />
 					</p>
 					<p>
 						<label>Super poder: </label>
-						<input type="text" id="super_poder" name="super_poder" placeholder="Super poder" onChange={(e) => this.updateEvent(e, "super_power")} />
+						<input type="text" id="super_poder" name="super_poder" placeholder="Super poder" onChange={(e) => this.updateEvent(e, "super_power")} value={this.props.list_of_heroes.superPoder} />
 					</p>
-					<button type="submit">Guardar</button>
+					<button type="submit">Gravar</button>
+					<button onClick={this.context.router.history.goBack}>Voltar</button>
 				</form>
-			</div>
+			</div >
 		);
 	}
 
@@ -53,10 +54,12 @@ class Formulario extends React.Component {
 				image: novoHeroi.image,
 			});
 
-		this.setState(
-			{
-				list_of_heroes: herois,
-			});
+		if (this.state.Super_heroi.id != null) {
+			herois.push(
+				{
+					list_of_heroes: herois,
+				})
+		}
 	}
 
 	updateEvent = (e, campo) => {

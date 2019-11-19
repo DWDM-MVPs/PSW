@@ -1,11 +1,12 @@
 ﻿import React from 'react';
 import { NavLink } from 'react-router-dom';
+import Formulario from './Formulario';
 
 class Dashboard extends React.Component {
 	render() {
 		return (
 			<div className="Dashboard">
-				<NavLink exact to="/Dashboard/add">Adicionar</NavLink>
+				<NavLink exact to="/dashboard/add">Adicionar</NavLink>
 				<table className="Tabela">
 					<tr>
 						<th>ID</th>
@@ -24,7 +25,7 @@ class Dashboard extends React.Component {
 								<td>
 									<button onClick={() => this.eliminarHeroi(hero.id)}>Eliminar</button>
 									{this.isFavorito(hero.id)}
-									<button>Editar</button>
+									<button onClick={() => (<Formulario list_of_heroes={this.props.list_of_heroes} />)}>Editar</button>
 								</td>
 							</tr>
 						)

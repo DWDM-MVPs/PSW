@@ -4,8 +4,8 @@ import '../App.css';
 import Loader from "../components/Loader";
 import heroesList from "../shared/Heroes";
 import Dashboard from "./Dashboard";
-import HeroInfo from "./HeroInfo";
 import Formulario from './Formulario';
+import HeroInfo from "./HeroInfo";
 
 class Content extends React.Component {
 	constructor(props) 
