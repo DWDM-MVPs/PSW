@@ -33,7 +33,7 @@ class Formulario extends React.Component {
 						<input type="text" id="super_poder" name="super_poder" placeholder="Super poder" onChange={(e) => this.updateEvent(e, "super_power")} value={this.props.list_of_heroes.superPoder} />
 					</p>
 					<button type="submit">Gravar</button>
-					<button onClick={this.context.router.history.goBack}>Voltar</button>
+					<button>Voltar</button>
 				</form>
 			</div >
 		);
