@@ -2,31 +2,28 @@
 import { Route, Switch } from 'react-router-dom';
 import '../App.css';
 import Loader from "../components/Loader";
-import heroesList from "../shared/Heroes";
 import Dashboard from "./Dashboard";
 import Formulario from './Formulario';
 import HeroInfo from "./HeroInfo";
+import { getTopHeroesByUserId } from "../shared/API";
 
 class Content extends React.Component {
-	constructor(props) 
-	{
+	constructor(props) {
 		super(props)
-		this.state = 
-		{
-			list_of_heroes: heroesList,
-			favorite_heroes: [1, 5, 6],
-			loading: true,
-		}
+		this.state =
+			{
+				list_of_heroes: getTopHeroesByUserId,
+				favorite_heroes: [1, 5, 6],
+				loading: true,
+			}
 	}
 
-	componentDidMount = () => 
-	{
-		setInterval(() => 
-		{
+	componentDidMount = () => {
+		setInterval(() => {
 			this.setState(
-			{
-				loading: false,
-			});
+				{
+					loading: false,
+				});
 		}, 3000)
 	}
 	render() {
@@ -37,8 +34,7 @@ class Content extends React.Component {
 				</div>
 			)
 		}
-		else 
-		{
+		else {
 			return (
 				<Switch>
 					<Route exact path="/" render={() =>
@@ -49,10 +45,8 @@ class Content extends React.Component {
 							<HeroInfo hero="Batman" img="img/batman.jpg" />
 							<HeroInfo hero="Wonder Woman" img="img/wonderwoman.jpg" />
 							{
-								this.state.list_of_heroes.map((heroi, pos) => 
-								{
-									if (this.state.favorite_heroes.includes(pos)) 
-									{
+								Object.keys(this.state.list_of_heroes).map((heroi, pos) => {
+									if (this.state.favorite_heroes.includes(pos)) {
 										return (<HeroInfo hero={heroi.name} img={heroi.image} />)
 									}
 									else return null;

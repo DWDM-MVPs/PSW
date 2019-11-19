@@ -18,7 +18,7 @@ class Dashboard extends React.Component {
 						<th>Ações</th>
 					</tr>
 					{
-						this.props.list_of_heroes.map((hero, i) =>
+						Object.keys(this.props.list_of_heroes).map((hero, i) =>
 							<tr>
 								<th>{hero.id}</th>
 								<td><img className="ImagemHeroi" src={hero.image} alt="Imagem não encontrada" /></td>
